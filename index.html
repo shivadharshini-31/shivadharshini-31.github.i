@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shivadharshini Singaravelan | Forensic Science Student, Orator &amp; MUN Debater</title>
+<meta name="description" content="Academic portfolio of Shivadharshini Singaravelan, B.Sc Forensic Science student at Lovely Professional University, orator, public speaker and MUN debater.">
+<meta property="og:title" content="Shivadharshini Singaravelan | Academic Portfolio">
+<meta property="og:description" content="Forensic Science student, orator and MUN debater.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔬</text></svg>">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <nav>
+      <a class="brand" href="#home">S. Shivadharshini</a>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#speaking">Speaking &amp; MUN</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button id="theme" aria-label="Toggle dark mode">🌓</button>
+    </nav>
+  </div>
+</header>
+
+<main>
+<div class="wrap">
+
+<section class="hero" id="home" style="border-top:none">
+  <div class="eyebrow">B.Sc Forensic Science · Lovely Professional University</div>
+  <h1>Shivadharshini Singaravelan</h1>
+  <p>Forensic science student, orator and MUN debater from Madurai, Tamil Nadu. I combine scientific rigour with the art of public speaking to explain evidence, argue ideas and bring people together.</p>
+  <div class="btns">
+    <a class="btn primary" href="https://www.linkedin.com/in/shivadharshini-singaravelan-083872448" target="_blank" rel="noopener noreferrer">Connect on LinkedIn</a>
+    <a class="btn" href="#events">View Events</a>
+  </div>
+</section>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>I am a B.Sc Forensic Science student at Lovely Professional University (LPU), Punjab. My interests sit where science meets communication: analysing evidence carefully, and then presenting it clearly and persuasively. Beyond the laboratory I am an active orator, public speaker and Model United Nations (MUN) debater, and I enjoy organising academic and cultural events.</p>
+  <div>
+    <span class="tag">Forensic Science</span><span class="tag">Public Speaking</span><span class="tag">MUN</span><span class="tag">Debate</span><span class="tag">Event Management</span><span class="tag">Research</span>
+  </div>
+</section>
+
+<section id="education">
+  <h2>Education</h2>
+  <div class="timeline">
+    <div class="item">
+      <div class="when">Present</div>
+      <h3>B.Sc Forensic Science</h3>
+      <p>Lovely Professional University, Phagwara, Punjab</p>
+    </div>
+    <!-- Add more entries: school, year, board, etc. -->
+  </div>
+  <div class="grid">
+    <div class="card">
+      <h3>Areas of Study</h3>
+      <ul>
+        <li>Crime scene investigation</li>
+        <li>Forensic biology &amp; toxicology</li>
+        <li>Fingerprint &amp; document examination</li>
+        <li>Forensic law &amp; ethics</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Skills</h3>
+      <ul>
+        <li>Analytical &amp; critical thinking</li>
+        <li>Scientific report writing</li>
+        <li>Research &amp; presentation</li>
+        <li>Leadership &amp; teamwork</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="speaking">
+  <h2>Public Speaking &amp; MUN</h2>
+  <p style="color:var(--muted)">Speaking is how I turn knowledge into impact. From committee rooms to the stage, I focus on research-backed arguments and clear delivery.</p>
+  <div class="grid">
+    <div class="card">
+      <h3>Oratory</h3>
+      <p>Prepared and extempore speeches on science, society and current affairs.</p>
+    </div>
+    <div class="card">
+      <h3>Model United Nations</h3>
+      <p>Diplomacy, resolution drafting, negotiation and position-paper writing as a delegate.</p>
+    </div>
+    <div class="card">
+      <h3>Debate</h3>
+      <p>Structured argumentation, rebuttal and quick, evidence-based thinking.</p>
+    </div>
+  </div>
+</section>
+
+<section id="events">
+  <h2>Event Management</h2>
+  <p style="color:var(--muted)">Conferences, debates, workshops and talks. Use the filters to browse, and edit the list in the <code>events</code> array at the bottom of this file.</p>
+  <div id="filters">
+    <button class="on" data-f="all">All</button>
+    <button data-f="upcoming">Upcoming</button>
+    <button data-f="past">Past</button>
+  </div>
+  <div class="grid" id="eventList"></div>
+</section>
+
+<section class="contact" id="contact">
+  <h2 style="display:inline-block">Let's Connect</h2>
+  <p>I am open to academic collaborations, MUN and debate opportunities, speaking invitations and event partnerships.</p>
+  <div class="btns" style="justify-content:center">
+    <a class="btn primary" href="https://www.linkedin.com/in/shivadharshini-singaravelan-083872448" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a>
+  </div>
+</section>
+
+</div>
+</main>
+
+<footer>
+  <div class="wrap">© <span id="yr"></span> Shivadharshini Singaravelan · Madurai, Tamil Nadu, India</div>
+</footer>
+
+<script>
+/* ===== EDIT YOUR EVENTS HERE =====
+   date format: YYYY-MM-DD   |   type: "upcoming" or "past" is worked out automatically */
+var events = [
+  {title:"Sample MUN Conference", date:"2026-12-15", place:"LPU, Phagwara", desc:"Replace this with your real event details."},
+  {title:"Sample Debate Workshop", date:"2026-09-10", place:"Online", desc:"Replace this with your real event details."}
+];
+
+var months=["JAN","FEB","MAR","APR","MAY","JUN","JUL","AUG","SEP","OCT","NOV","DEC"];
+var list=document.getElementById("eventList");
+var today=new Date(); today.setHours(0,0,0,0);
+
+function esc(s){var d=document.createElement("div");d.textContent=s;return d.innerHTML}
+
+events.sort(function(a,b){return new Date(a.date)-new Date(b.date)}).forEach(function(e){
+  var d=new Date(e.date+"T00:00:00");
+  var kind=d>=today?"upcoming":"past";
+  var c=document.createElement("div");
+  c.className="card ev";
+  c.setAttribute("data-k",kind);
+  c.innerHTML='<div class="date"><b>'+d.getDate()+'</b>'+months[d.getMonth()]+' '+d.getFullYear()+'</div>'+
+    '<div><h3>'+esc(e.title)+'</h3><p>'+esc(e.place)+'</p><p>'+esc(e.desc)+'</p></div>';
+  list.appendChild(c);
+});
+
+document.getElementById("filters").addEventListener("click",function(ev){
+  var b=ev.target.closest("button"); if(!b) return;
+  document.querySelectorAll("#filters button").forEach(function(x){x.classList.remove("on")});
+  b.classList.add("on");
+  var f=b.getAttribute("data-f");
+  list.querySelectorAll(".card").forEach(function(c){
+    c.classList.toggle("hide", f!=="all" && c.getAttribute("data-k")!==f);
+  });
+});
+
+document.getElementById("yr").textContent=new Date().getFullYear();
+
+document.getElementById("theme").addEventListener("click",function(){
+  var r=document.documentElement;
+  var dark=r.getAttribute("data-theme")==="dark"||(!r.getAttribute("data-theme")&&matchMedia("(prefers-color-scheme: dark)").matches);
+  r.setAttribute("data-theme",dark?"light":"dark");
+});
+</script>
+</body>
+</html>
